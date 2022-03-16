@@ -1,11 +1,30 @@
 img{
-    height:50vh;
-    width:15vw;
+    height:50%;
+    width:100%;
     object-fit:cover;
-    transition:transform 400ms
+    border-radius:10px
 }
 
-img:hover{
-    transform: scale(1.1);
-    background-color: rgb(5, 156, 106);
+
+.gridBox{
+    position:relative;
+    transition:transform 400ms;
+}
+
+.gridBox:hover{
+    transform: scale(0.9);
+}
+
+.content {
+    background-color: black;
+    opacity:0.8;
+    color:white;
+    height:35%;
+    /* width:100%; */
+    position:absolute;
+    bottom:2px;
+    right:0;
+    left:0;
+    transition: transform 400ms;
+    padding:5px
 }
