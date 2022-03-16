@@ -1,13 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 import Home from './components/Home';
-import ColorChip from './components/ColorChip';
+import Logo from './components/Logo';
 
 function App() {
   return (
     <div className="App">
+      <Logo />
       <Home />
-      <ColorChip />
     </div>
   );
 }

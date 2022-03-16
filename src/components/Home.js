@@ -4,8 +4,7 @@ import Box from '@mui/material/Box';
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import '../css/Home.css'
-import { GridViewRounded } from '@mui/icons-material';
-import {ColorChips} from "./ColorChip";
+import ColorChip from "./ColorChip";
 
 function Home() {
     const [animeList, setAnimeList] = useState([]) //List for all fetched animes
@@ -19,7 +18,7 @@ function Home() {
     }));
 
     //Fetching Anime List from API URL and setting list as state variable animeList
-    useEffect(async () => {  
+    useEffect(async () => {
         fetch('https://ghibliapi.herokuapp.com/films')
             .then(resp => {
                 console.log(resp)
@@ -34,24 +33,28 @@ function Home() {
     //Returning Grid view for list of animes
     return (
         <>
-            <Box sx={{ flexGrow: 1}} style={{padding:'70px'}}>
-                <Grid container columns={{ xs: 12, sm: 18, md: 12 }} alignItems="center" columnSpacing={{ xs: 1, sm: 2, md: 3 }} rowSpacing={{ xs: 4, sm: 8, md: 15 }}>
+            <Box sx={{ flexGrow: 1 }} style={{ padding: '70px' }}>
+                <Grid container columns={{ xs: 12, sm: 12, md: 18,lg:12 }} alignItems="center" columnSpacing={{ xs: 1, sm: 2, md: 3 }} rowSpacing={{ xs: 4, sm: 8, md: 15 }}>
                     {animeList.map((anime) => {
                         //Looping through list of animes
                         return (
-                            <Grid item xs={12} sm={6} md={2}>
+                            <Grid item xs={12} sm={6} md={6} lg={2}>
                                 <div className="gridBox">
-                                <img src={anime.image}/>
-                                <div className="content">
-                                    <span>{anime.title} | {anime.original_title}</span>
-                                    <br />
-                                    <span>Release - {anime.release_date}</span>
-                                </div>
+                                    <div className="chip">
+                                    <ColorChip rt_score={anime.rt_score + "%"}/>
+                                    </div>
+                                    
+                                    <img src={anime.image} />
+                                    <div className="content">
+                                        <span>{anime.title} | {anime.original_title}</span>
+                                        <br />
+                                        <span>Release - {anime.release_date}</span>
+                                    </div>
                                 </div>
                             </Grid>
                         )
                     })}
-                </Grid>    
+                </Grid>
             </Box>
         </>
     )

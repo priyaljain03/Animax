@@ -26,5 +26,12 @@ img{
     right:0;
     left:0;
     transition: transform 400ms;
-    padding:5px
+    padding:5px;
+    overflow-y:hidden
+}
+
+.chip {
+    position: absolute;
+    top:0px;
+    font-weight: 1000;
 }
