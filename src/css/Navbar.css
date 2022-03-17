@@ -1,0 +1,55 @@
+.nav{
+    display:flex;
+    justify-content:space-between
+}
+
+.menu-list{
+    display:flex;
+}
+
+.menu-list li {
+    padding:10px;
+    padding-top:0px;
+    list-style:none;
+    color:white;
+    font-size:20px;
+    font-weight:1000
+}
+
+.menu-list li:hover{
+    color:orangered;
+    cursor:pointer;
+    transition: color 200ms ease-in;
+}
+
+.premium-button {
+    background-color: orange;
+    border:none;
+    height:5vh;
+    width: 10vw;
+    color:black;
+    font-size: 17px;
+    font-weight: 1000;
+    border-radius: 6px;
+}
+
+.premium-button:hover{
+    background-color:rgb(233, 175, 68);
+    cursor: pointer;
+}
+
+.login-button{
+    height:5vh;
+    background:transparent;
+    border:2px solid white;
+    color:white;
+    font-weight: 1000;
+    border-radius: 5px;
+}
+
+.login-button:hover{
+    color:black;
+    background-color:white;
+    transition: background-color 1000ms linear;
+    cursor:pointer
+}
