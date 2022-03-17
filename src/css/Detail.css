@@ -1,0 +1,107 @@
+.content-grid{
+    position:absolute;
+    top:10%;
+    color: white;
+    padding:20px
+}
+
+.banner {
+    font-size: 50px;
+    height: 70vh;
+    filter: blur(20px);
+    justify-content: 'cover'; 
+}
+
+.content-img{
+    height:80%;
+    width:100%;
+    margin:auto
+}
+
+.anime-info{
+    color:white;
+    padding:20px;
+    font-size:20px;
+    background: rgba(17, 10, 10, 0.4);
+    border-radius:10px;
+}
+
+.anime-info h1{
+    font-size:40px;
+}
+
+.content-extra{
+    background: rgba(97, 95, 95, 0.4);
+    font-size: 20px;
+    border-radius:10px;
+    padding:20px;
+    margin-left:10%;
+    color:white
+}
+
+
+@media only screen and (max-width: 480px) {
+    /* Mobile Devices */
+    .anime-info{
+        color:white;
+        padding:30px;
+        font-size:15px;
+        background: rgba(17, 10, 10, 0.4);
+        border-radius:10px;
+    }
+
+    .anime-info h1{
+        font-size:20px;
+    }
+
+    .content-extra{
+        background: rgba(97, 95, 95, 0.4);
+        font-size: 15px;
+        border-radius:10px;
+        padding:20px;
+        /* margin-left:10%; */
+        justify-content: center;
+        color:white
+    }
+}
+  
+  @media only screen and (min-width:481px) and (max-width: 768px) {
+   /* IPADs */
+  /* Tablets */
+  .anime-info{
+    color:white;
+    padding:30px;
+    font-size:15px;
+    background: rgba(17, 10, 10, 0.4);
+    border-radius:10px;
+}
+
+.anime-info h1{
+    font-size:20px;
+}
+  }
+  
+  @media only screen and (min-width:769px) and (max-width: 1024px) {
+   /* Small Screen Laptops */
+   .anime-info{
+    color:white;
+    padding:30px;
+    font-size:15px;
+    background: rgba(17, 10, 10, 0.4);
+    border-radius:10px;
+}
+
+.anime-info h1{
+    font-size:20px;
+}
+  }
+  
+  @media only screen and (min-width:1024px) and (max-width: 1200px) {
+    /* Desktops */
+   
+  }
+  
+  @media only screen and (min-width:1201px) {
+  /* Extra large screens,TV */
+  
+  }
