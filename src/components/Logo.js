@@ -3,7 +3,7 @@ import '../css/Logo.css'
 
 function Logo() {
   return (
-    <div className="logo">Ani-<span style={{color:'white'}}>max</span></div>
+    <div className="logo">ani<span style={{color:'orange'}}>max</span></div>
   )
 }
 

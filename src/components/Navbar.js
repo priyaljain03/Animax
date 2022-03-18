@@ -1,6 +1,5 @@
 import * as React from 'react';
 import Logo from './Logo';
-import '../css/Navbar.css'
 import Casino from '@mui/icons-material/Casino';
 import SearchIcon from '@mui/icons-material/Search';
 import AppBar from '@mui/material/AppBar';
@@ -15,14 +14,12 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import FaceOutlinedIcon from '@mui/icons-material/FaceOutlined';
+import '../css/Navbar.css'
 
 //Created Dark Theme for NavBar
 const darkTheme = createTheme({
     palette: {
-        mode: 'dark',
-        primary: {
-            main: '#1976d2',
-        },
+        mode: 'dark'
     },
 });
 
@@ -115,32 +112,12 @@ const ResponsiveAppBar = () => {
                             <Logo />
                         </Typography>
                         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+                      
                         </Box>
 
                         {/* Menu Items starts here */}
                         <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' } }}>
-                            <Button sx={{
-                                my: 2, color: 'black', fontWeight: '1000', fontSize: '10px',
-                                display: 'block', backgroundColor: 'orange',
-                                '&:hover': {
-                                    backgroundColor: 'rgb(233, 175, 68)',
-                                },
-                            }}>Try Premium</Button>
-                            <MenuItem
-                                key={1}
-                                onClick={handleCloseNavMenu}
-                                sx={{
-                                    my: 2, color: 'white',
-                                    display: 'block',
-                                    '&:hover': {
-                                        color: 'orangered',
-                                        transition: 'color 300ms linear',
-                                        background: 'none'
-                                    }
-                                }}
-                            >
-                                <Casino className="icon" />Random
-                            </MenuItem>
+                           
                             <MenuItem
                                 key={1}
                                 onClick={handleCloseNavMenu}
@@ -155,7 +132,21 @@ const ResponsiveAppBar = () => {
                             >
                                 <SearchIcon className="icon" />Search
                             </MenuItem>
-
+  <MenuItem
+                                key={1}
+                                onClick={handleCloseNavMenu}
+                                sx={{
+                                    my: 2, color: 'white',
+                                    display: 'block',
+                                    '&:hover': {
+                                        color: 'orangered',
+                                        transition: 'color 300ms linear',
+                                        background: 'none'
+                                    }
+                                }}
+                            >
+                                <Casino className="icon" />Random
+                            </MenuItem>
                             <Button
                                 key={1}
                                 onClick={handleCloseNavMenu}
@@ -163,6 +154,7 @@ const ResponsiveAppBar = () => {
                                     my: 2, color: 'white', display: 'block',
                                     backgroundColor: 'transparent',
                                     border: '1px solid white',
+                                    marginRight:'10px',
                                     '&:hover': {
                                         backgroundColor: 'white',
                                         color: 'black'
@@ -171,6 +163,13 @@ const ResponsiveAppBar = () => {
                             >
                                 LogIn
                             </Button>
+                            <Button sx={{
+                                my: 2, color: 'black', fontWeight: '1000', fontSize: '10px',
+                                display: 'block', backgroundColor: 'orange',
+                                '&:hover': {
+                                    backgroundColor: 'rgb(233, 175, 68)',
+                                },
+                            }}>Try Premium</Button>
                         </Box>
                     </Toolbar>
                 </Container>

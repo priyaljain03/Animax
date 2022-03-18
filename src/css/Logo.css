@@ -1,7 +1,7 @@
 .logo {
-    color:orange;
-    font-size:50px;
-    font-weight: 1000;
-    padding:30px;
-    /* border-bottom: 1px solid gray; */
+    color:orangered;
+    font-family:Main Bold;
+    font-size:35px;
+    font-weight: 600;
+    padding:10px;
 }

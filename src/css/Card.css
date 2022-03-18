@@ -5,7 +5,6 @@ img{
     border-radius:10px
 }
 
-
 .gridBox{
     position:relative;
     transition:transform 400ms;
@@ -15,12 +14,17 @@ img{
     transform: scale(0.9);
 }
 
+.chip {
+    position: absolute;
+    top:0px;
+    font-weight: 1000;
+}
+
 .content {
     background-color: black;
     opacity:0.8;
     color:white;
     height:35%;
-    /* width:100%; */
     position:absolute;
     bottom:2px;
     right:0;
@@ -28,10 +32,4 @@ img{
     transition: transform 400ms;
     padding:5px;
     overflow-y:hidden
-}
-
-.chip {
-    position: absolute;
-    top:0px;
-    font-weight: 1000;
 }
