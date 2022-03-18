@@ -35,11 +35,9 @@ function Detail(props) {
     useEffect(async () => {
         fetch(`https://ghibliapi.herokuapp.com/films/${params.animeId}`)
             .then(resp => {
-                console.log(resp)
                 return resp.json()
             })
             .then(res => {
-                console.log(res)
                 setAnime(res)
             })
             .catch(err => {
