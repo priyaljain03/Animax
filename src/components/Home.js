@@ -37,7 +37,7 @@ function Home() {
                         {animeList.map((anime) => {
                             //Looping through list of animes
                             return (
-                               <Card anime={anime}/>
+                               <Card key={anime.id} anime={anime}/>
                             )
                         })}
                     </Grid>

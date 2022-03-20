@@ -120,7 +120,7 @@ const ResponsiveAppBar = () => {
                         <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' } }}>
                            
                             <MenuItem
-                                key={1}
+                                key={'search'}
                                 onClick={handleCloseNavMenu}
                                 sx={{
                                     my: 2, color: 'white', display: 'block',
@@ -134,7 +134,7 @@ const ResponsiveAppBar = () => {
                                 <SearchIcon className="icon" />Search
                             </MenuItem>
   <MenuItem
-                                key={1}
+                                key={'random'}
                                 onClick={handleCloseNavMenu}
                                 sx={{
                                     my: 2, color: 'white',
@@ -149,7 +149,7 @@ const ResponsiveAppBar = () => {
                                 <Casino className="icon" />Random
                             </MenuItem>
                             <Button
-                                key={1}
+                                key={'login'}
                                 onClick={handleCloseNavMenu}
                                 sx={{
                                     my: 2, color: 'white', display: 'block',
