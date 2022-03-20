@@ -67,7 +67,7 @@
     /* Mobile Devices */
     .content-grid{
         position:absolute;
-        top:7%;
+        top:15%;
     }
 
     .banner {
@@ -108,7 +108,7 @@
   /* Tablets */
   .content-grid{
     position:absolute;
-    top:7%;
+    top:15%;
     color: white;
     padding:20px
 }

@@ -60,7 +60,7 @@ function Detail(props) {
                     {/* Image and Content about the Anime */}
                     <Box className="content-grid" sx={{ flexGrow: 1 }} >
                         <Grid container spacing={2} justifyContent="center" alignItems="center">
-                            <Grid item xs='auto' sm={4} md={3} lg={3}>
+                            <Grid item xs={12} sm={4} md={3} lg={3}>
                                 <img className="content-img" src={anime.image} />
                             </Grid>
                             <Grid item xs={12} sm={8} md={7} lg={7}>
