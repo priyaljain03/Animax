@@ -24,11 +24,13 @@ function Detail(props) {
         transform: 'translate(-50%, -50%)',
         width: 350,
         bgcolor: 'rgba(17, 10, 10, 0.9)',
-        border: 'None',
+        border:'0.5px solid orange',
         boxShadow: 24,
         p: 4,
         borderRadius:"10px",
-        color:'white'
+        color:'white',
+        animation:'pop 500ms ease forwards',
+        textAlign:'center'
     };
 
     // Fetching anime based on Id received in props
