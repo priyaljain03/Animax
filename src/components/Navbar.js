@@ -15,6 +15,9 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import FaceOutlinedIcon from '@mui/icons-material/FaceOutlined';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import RedditIcon from '@mui/icons-material/Reddit';
 import '../css/Navbar.css'
 
 //Created Dark Theme for NavBar
@@ -91,13 +94,13 @@ const ResponsiveAppBar = () => {
                                     display: { xs: 'block', md: 'none' },
                                 }}
                             >
-                                <MenuItem key="random" onClick={handleCloseNavMenu}>
+                                <MenuItem key="menuLogin" onClick={handleCloseNavMenu}>
                                     <Typography textAlign="center"><FaceOutlinedIcon /> LOGIN</Typography>
                                 </MenuItem>
-                                <MenuItem key="login" onClick={handleCloseNavMenu}>
+                                <MenuItem key="menuRandom" onClick={handleCloseNavMenu}>
                                     <Typography textAlign="center"><Casino className="icon" /> RANDOM</Typography>
                                 </MenuItem>
-                                <MenuItem key="search" onClick={handleCloseNavMenu}>
+                                <MenuItem key="menuSearch" onClick={handleCloseNavMenu}>
                                     <Typography textAlign="center"><SearchIcon className="icon" /> SEARCH</Typography>
                                 </MenuItem>
                             </Menu>
@@ -113,7 +116,52 @@ const ResponsiveAppBar = () => {
                             <Logo />
                         </Typography>
                         <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                      
+                                <MenuItem
+                                key={'twitter'}
+                                onClick={()=>window.open('https://www.twitter.com/')}
+                                sx={{
+                                    my: 2, color: 'white',
+                                    display: 'block',
+                                    backgroundColor:'rgb(53, 95, 209)',
+                                    borderRadius:'10px',
+                                    '&:hover': {
+                                        cursor:"pointer"
+                                    }
+                                }}
+                            >
+                                <TwitterIcon />
+                            </MenuItem>
+                                <MenuItem
+                                key={'facebook'}
+                                onClick={()=>window.open('https://www.facebook.com/')}
+                                sx={{
+                                    my: 2, color: 'white',
+                                    display: 'block',
+                                    backgroundColor:'rgb(30, 30, 161)',
+                                    borderRadius:'10px',
+                                    '&:hover': {
+                                        cursor:"pointer"
+                                    }
+                                }}
+                            >
+                                <FacebookIcon />
+                            </MenuItem>
+                                <MenuItem
+                                key={'reddit'}
+                                onClick={()=>window.open('https://www.reddit.com/')}
+                                sx={{
+                                    my: 2, color: 'white',
+                                    display: 'block',
+                                    backgroundColor:'red',
+                                    borderRadius:'10px',
+                                    '&:hover': {
+                                        cursor:"pointer"
+                                    }
+                                }}
+                            >
+                                <RedditIcon />
+                            </MenuItem>
+                           
                         </Box>
 
                         {/* Menu Items starts here */}
@@ -149,7 +197,7 @@ const ResponsiveAppBar = () => {
                                 <Casino className="icon" />Random
                             </MenuItem>
                             <Button
-                                key={'login'}
+                                key='login'
                                 onClick={handleCloseNavMenu}
                                 sx={{
                                     my: 2, color: 'white', display: 'block',

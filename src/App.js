@@ -8,7 +8,6 @@ import {
 import Home from './components/Home';
 import Detail from './components/Detail';
 import Error from './components/Error';
-import Loader from './components/Loader';
 import Navbar from './components/Navbar';
 
 function App() {

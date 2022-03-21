@@ -2,7 +2,8 @@
     position:absolute;
     top:20%;
     color: white;
-    padding:20px
+    padding:20px;
+    font-family: Montserrat;
 }
 
 .banner {
@@ -63,22 +64,12 @@
     cursor: pointer;
 } 
 
-@keyframes pop {
-    from{
-        top: 40%;
-        opacity: 0.5;
-    }
-    to{
-        top: 50%;
-        opacity:1;
-    }
-}
-
 @media only screen and (max-width: 480px) {
     /* Mobile Devices */
     .content-grid{
         position:absolute;
         top:15%;
+        font-weight: Montserrat;
     }
 
     .banner {
@@ -114,14 +105,15 @@
 
 }
   
-  @media only screen and (min-width:481px) and (max-width: 768px) {
+@media only screen and (min-width:481px) and (max-width: 768px) {
    /* IPADs */
   /* Tablets */
   .content-grid{
     position:absolute;
     top:15%;
     color: white;
-    padding:20px
+    padding:20px;
+    font-family: Montserrat;
 }
 
 .anime-info h1{
@@ -150,4 +142,16 @@
     background: transparent;
     opacity:0.8 
 }
+}
+
+/* Animations */
+@keyframes pop {
+    from{
+        top: 40%;
+        opacity: 0.5;
+    }
+    to{
+        top: 50%;
+        opacity:1;
+    }
 }

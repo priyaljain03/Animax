@@ -21,7 +21,7 @@ function Card(props) {
     return (
         <Grow direction="up" in={checked} mountOnEnter unmountOnExit>
             <Grid item xs={12} sm={6} md={6} lg={2}>
-                <div className="gridBox">
+                <div className="grid-box">
                     <div className="chip">
                         <ColorChip rt_score={anime.rt_score + "%"} />
                     </div>

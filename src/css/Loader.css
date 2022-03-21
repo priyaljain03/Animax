@@ -17,9 +17,11 @@
    50% { transform: rotate(225deg) }
   100% { transform: rotate(180deg) }
 }
+
 .ldio-5u3sg71a4sc > div:nth-child(2) {
   transform: translate(-15px,0);
 }
+
 .ldio-5u3sg71a4sc > div:nth-child(2) div {
   position: absolute;
   top: 23.799999999999997px;
@@ -31,9 +33,11 @@
   animation: ldio-5u3sg71a4sc-1 1.1235955056179776s linear infinite;
   transform-origin: 35.699999999999996px 35.699999999999996px
 }
+
 .ldio-5u3sg71a4sc > div:nth-child(2) div:nth-child(2) {
   animation: ldio-5u3sg71a4sc-2 1.1235955056179776s linear infinite
 }
+
 .ldio-5u3sg71a4sc > div:nth-child(2) div:nth-child(3) {
   transform: rotate(-90deg);
   animation: none;
@@ -42,9 +46,11 @@
    20% { opacity: 1 }
   100% { transform: translate(41.65px,0); opacity: 1 }
 }
+
 .ldio-5u3sg71a4sc > div:nth-child(1) {
   display: block;
 }
+
 .ldio-5u3sg71a4sc > div:nth-child(1) div {
   position: absolute;
   top: 54.739999999999995px;
@@ -55,6 +61,7 @@
   background: #e15b64;
   animation: ldio-5u3sg71a4sc-3 1.1235955056179776s linear infinite
 }
+
 .ldio-5u3sg71a4sc > div:nth-child(1) div:nth-child(1) { animation-delay: -0.5963s }
 .ldio-5u3sg71a4sc > div:nth-child(1) div:nth-child(2) { animation-delay: -0.2937s }
 .ldio-5u3sg71a4sc > div:nth-child(1) div:nth-child(3) { animation-delay: 0s }
@@ -65,6 +72,7 @@
   overflow: hidden;
   background: #000000;
 }
+
 .ldio-5u3sg71a4sc {
   width: 100%;
   height: 100%;
@@ -73,4 +81,5 @@
   backface-visibility: hidden;
   transform-origin: 0 0; /* see note above */
 }
+
 .ldio-5u3sg71a4sc div { box-sizing: content-box; }

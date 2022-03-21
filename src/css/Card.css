@@ -5,12 +5,12 @@ img{
     border-radius:10px
 }
 
-.gridBox{
+.grid-box{
     position:relative;
     transition:transform 400ms;
 }
 
-.gridBox:hover{
+.grid-box:hover{
     transform: scale(0.9);
 }
 

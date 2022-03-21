@@ -1,0 +1,84 @@
+.banner-wrapper-outer{
+    height: 80vh;
+}
+
+.banner-content{
+    color:white;
+    position: absolute;
+    width:40vw;
+    font-family: Montserrat;
+    top: 25%;
+    padding:40px
+}
+
+.banner-title{
+    font-size:50px;
+    font-weight:700
+}
+
+.banner-extra {
+    color:orange;
+    font-weight: 700;
+}
+
+.banner-buttons{
+    margin-top: 20px;
+}
+
+.fade-bottom{
+    height:100vh;
+    bottom:0px;
+    background: linear-gradient(
+        180deg,
+        transparent,
+        rgba(5, 1, 1, 0.8),
+        #111
+      );
+} 
+
+@media only screen and (max-width: 768px) {
+    /* Mobile Devices */
+    .banner-wrapper-outer{
+        height: 100vh;
+        object-fit: cover;
+    }
+    
+    .banner-content{
+        color:white;
+        position: absolute;
+        width:60vw;
+        font-family: Montserrat;
+        top: 50%;
+        padding:20px
+    }
+
+    .banner-title{
+        font-size:30px;
+        font-weight:700
+    }
+
+    .banner-description{
+        display: none;
+    }
+
+    .banner-extra {
+    color:orange;
+    font-size: 13px;
+    font-weight:700
+    }
+
+    .banner-buttons{
+        margin-top:10px
+    }
+
+    .fade-bottom{
+    height:100vh;
+    bottom:0px;
+    background: linear-gradient(
+        180deg,
+        transparent,
+        rgba(5, 1, 1, 0.8),
+        #111
+      );
+}
+}
