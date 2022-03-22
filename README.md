@@ -10,3 +10,5 @@ Here are some screenshots from the application created :
 
 
 ![](./images/popup.png)
+
+Checkout the Application here : https://animax-anime.herokuapp.com/
